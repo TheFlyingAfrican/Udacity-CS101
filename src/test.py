@@ -1,12 +1,44 @@
-def print_abacus(value):
-      #print int(str("%010d" % value)[4])
-      for i in range(0, 10): 
-          print "|"+"00000*****"[0:(10-int(str("%010d" % value)[i]))]+"   "+"00000*****"[10-int(str("%010d" % value)[i]):10]+"|"
+# table = [['a', 1],['b',2],['c',5]]
+# 
+# for e in table:
+#     print e
+#     if 'c' in e:
+#         print 'found' + str(e[1])
+        
+# dict = {
+#         'a':1,
+#         'aa':2,
+#         'aaa':3,
+#         'bb':4,
+#         'cc': {'name':'nick'}
+#         }
+# 
+# print dict['c']
+# 
+# print 'a' in 'aa'
 
-#print_abacus(100)
+graph = {'index.html' : ['aaa','bbb','ccc'],
+         'hummus.html' : ['ddd','eee','fff']}
 
-# print str('%010d' % 10)
-# print '%(language)s has %(#)03d quote types.' \
-# % {'language': "Python", "#": 2}
+print graph
 
-print '%(test)s has %(xyz)s blah blahs.' % {'test' : 'hello', 'xyz' : 'world'}
+for page in graph:
+    print graph[page]
+
+row = [1,2,3,4]
+
+row = []
+new_row =[[1]]
+row.append([1])
+new_row[0].append(2)
+
+print row
+print new_row
+
+for i in range(1,2):
+    print i
+    
+def test_proc(a,b,c):
+    return [a,b,c]
+
+print test_proc(1,2,3)
