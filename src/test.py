@@ -17,28 +17,48 @@
 # 
 # print 'a' in 'aa'
 
-graph = {'index.html' : ['aaa','bbb','ccc'],
-         'hummus.html' : ['ddd','eee','fff']}
+# graph = {'index.html' : ['aaa','bbb','ccc'],
+#          'hummus.html' : ['ddd','eee','fff']}
+# 
+# print graph
+# 
+# for page in graph:
+#     print graph[page]
+# 
+# row = [1,2,3,4]
+# print row[:]
+# row = []
+# new_row =[[1]]
+# row.append([1])
+# new_row[0].append(2)
+# 
+# print row
+# print new_row
+# 
+# for i in range(1,2):
+#     print i
+#     
+# def test_proc(a,b,c):
+#     "this is a test of documentation for test_proc"
+#     return [a,b,c]
+# 
+# print test_proc(1,2,3)
+# 
+# 
+# for j in range(10, 0, -1):
+#     print j
+# 
+# print row
 
-print graph
 
-for page in graph:
-    print graph[page]
+a = [1,2,3,4,5]
+b = [5,6,7,3,2]
 
-row = [1,2,3,4]
+c = set(a)
+c.add(9)
+# print c
+print c
 
-row = []
-new_row =[[1]]
-row.append([1])
-new_row[0].append(2)
-
-print row
-print new_row
-
-for i in range(1,2):
-    print i
-    
-def test_proc(a,b,c):
-    return [a,b,c]
-
-print test_proc(1,2,3)
+print c.union(a)
+print c.union
+print dir(c)
